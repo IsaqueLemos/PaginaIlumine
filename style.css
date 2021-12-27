@@ -57,7 +57,7 @@ li > a:hover {
 }
 
 .botao:hover {
-    background-color: #fff78e;
+    background-color: #f3efdd;
 }
 
 #login {
@@ -66,7 +66,7 @@ li > a:hover {
 }
 
 main {
-    margin: 3% 0;
+    margin: 5% 0;
 }
 
 section {
@@ -80,11 +80,11 @@ section {
     margin: auto;
 }
 
-.img:nth-child(1) {
+#sec1 > .img {
     margin-right: 0;
 }
 
-.img:nth-child(2) {
+#sec2 > .img {
     margin-left: 0;
 }
 
@@ -95,6 +95,7 @@ section {
 
 #texto1{
     font-size: 1.75em;
+    margin-left: 30px;
 }
 
 #website {
@@ -110,6 +111,10 @@ section {
 #sec2 {
     flex-direction: row-reverse;
     margin-top: 250px;
+}
+
+#texto2 {
+    margin-right: 30px;
 }
 
 #servicos > li {
@@ -155,6 +160,11 @@ article {
     display: flex;
     padding: 15px;
     box-shadow: 1px 1px 1px #F5EB6D;
+    margin: auto;
+}
+
+article:nth-child(4) {
+    margin-top: 50px;
 }
 
 .foto {
@@ -224,17 +234,17 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1070px){
     #texto1 {
         font-size: 1.3em;
     }
 
     .img {
-        width: 350px;
+        width: 400px;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 830px) {
     #logo {
         text-align: center;
         float: none;
@@ -250,7 +260,23 @@ footer {
     }
 
     .img {
-        width: 300px;
+        width: 320px;
+    }
+
+    #sec1 > .img {
+        margin: auto;
+    }
+
+    #sec2 > .img {
+        margin: auto;
+    }
+
+    #texto1 {
+        margin: auto;
+    }
+
+    #texto2 {
+        margin: auto;
     }
 
     footer {
@@ -271,17 +297,9 @@ footer {
     
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 675px) {
     section {
         flex-direction: column;
-    }
-    
-    .img:nth-child(1) {
-        margin: auto;
-    }
-
-    .img:nth-child(2) {
-        margin: auto;
     }
 
     #texto1 {
@@ -299,6 +317,10 @@ footer {
 
     article {
         width: 100%;
+        margin-top: 20px;
+    }
+
+    article:nth-child(4) {
         margin-top: 20px;
     }
 
@@ -374,12 +396,8 @@ footer {
         font-size: 0.75rem;
     }
 
-    .img {
-        width: 200px;
-    }
-
     #texto1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .textos {
