@@ -41,6 +41,7 @@ li {
 li > a {
     text-decoration: none;
     color: white;
+    transition: all 0.3s ease;
 }
 
 li > a:hover {
@@ -53,11 +54,12 @@ li > a:hover {
     border: none;
     border-radius: 10px;
     background-color: #F5EB6D;
-    box-shadow: 1px 1px 1px white;
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #f3efdd;
+    background-color: #202020;
+    color: #F5EB6D;
 }
 
 #login {
@@ -78,14 +80,6 @@ section {
 .img {
     width: 500px;
     margin: auto;
-}
-
-#sec1 > .img {
-    margin-right: 0;
-}
-
-#sec2 > .img {
-    margin-left: 0;
 }
 
 .textos {
